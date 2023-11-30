@@ -119,7 +119,7 @@ func wrapPasswordEntryRow(obj *coreglib.Object) *PasswordEntryRow {
 				},
 			},
 			Object: obj,
-			Editable: gtk.Editable{
+			EditableTextWidget: gtk.EditableTextWidget{
 				Widget: gtk.Widget{
 					InitiallyUnowned: coreglib.InitiallyUnowned{
 						Object: obj,

@@ -73,7 +73,7 @@ type EntryRow struct {
 	PreferencesRow
 
 	*coreglib.Object
-	gtk.Editable
+	gtk.EditableTextWidget
 }
 
 var (
@@ -137,7 +137,7 @@ func wrapEntryRow(obj *coreglib.Object) *EntryRow {
 			},
 		},
 		Object: obj,
-		Editable: gtk.Editable{
+		EditableTextWidget: gtk.EditableTextWidget{
 			Widget: gtk.Widget{
 				InitiallyUnowned: coreglib.InitiallyUnowned{
 					Object: obj,

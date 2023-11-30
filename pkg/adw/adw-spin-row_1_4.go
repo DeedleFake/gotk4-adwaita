@@ -68,7 +68,7 @@ type SpinRow struct {
 	ActionRow
 
 	*coreglib.Object
-	gtk.Editable
+	gtk.EditableTextWidget
 }
 
 var (
@@ -134,7 +134,7 @@ func wrapSpinRow(obj *coreglib.Object) *SpinRow {
 			},
 		},
 		Object: obj,
-		Editable: gtk.Editable{
+		EditableTextWidget: gtk.EditableTextWidget{
 			Widget: gtk.Widget{
 				InitiallyUnowned: coreglib.InitiallyUnowned{
 					Object: obj,
